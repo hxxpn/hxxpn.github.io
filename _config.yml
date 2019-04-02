@@ -1,21 +1,40 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title: "Blog Title"
+author: "Blog Author"
+description: "Really cool blog about ... something"
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Jekyll settings
+permalink: /:title/          # see https://jekyllrb.com/docs/permalinks/
+paginate: 2                  # number of articles per page, remove to disable pagination
+excerpt_separator: "\n\n\n"  # indicates the end of the excerpt by two blank lines
 
-# Build settings
-markdown: kramdown
+# Page settings
+show_excerpts: false         # show article previews on the home page instead of headlines
+hide_title: false            # remove site heading in the header
+post_footer: true            # show previous and next links at the end of each post
+date_format: "%B %d, %Y"     # see http://shopify.github.io/liquid/filters/date/
+
+# Theme settings
+dark_theme: false            # enables dark mode
+dark_header: false           # uses dark header whether dark_theme is enabled or not
+
+#navigation:                 # (optional) site navigation in the header
+#  - index.html
+#  - archive.md
+#  - README.md
+
+icons:                       # (optional) icons in the header, see http://fontawesome.com/icons
+  envelope: "mailto:niklasbuschmann@users.noreply.github.com"
+  github: "https://github.com/niklasbuschmann/contrast"
+  rss: "/contrast-demo/feed.xml"
+
+comments:                    # embed disqus or isso comments
+#  disqus: "disqus-contrast"
+#  isso: "comments.mysite.org"
+
+remote_theme: niklasbuschmann/contrast
+
+plugins: 
+ - jekyll-remote-theme
+ - jekyll-feed
+ - jekyll-paginate
+ - jekyll-default-layout
