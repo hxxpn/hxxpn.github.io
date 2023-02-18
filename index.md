@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+#Philosophy, literature and programming. Maybe a bit of maths.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+This blog is mainly concerned with studying and developing my skills as a human and a programmer.
