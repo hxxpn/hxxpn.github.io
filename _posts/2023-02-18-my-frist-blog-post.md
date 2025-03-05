@@ -11,4 +11,4 @@ I started this blog as a way to be accountable for my learning. This will enable
 
 ### Main interests and fields of study
 
-This will be priamrily a Backend engineering blog, though it will not shorten the scope of learning.
+This will be primarily a Backend engineering blog, though it will not shorten the scope of learning.
